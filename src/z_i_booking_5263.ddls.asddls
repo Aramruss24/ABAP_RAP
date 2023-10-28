@@ -1,5 +1,5 @@
 @AbapCatalog.viewEnhancementCategory: [#NONE]
-@AccessControl.authorizationCheck: #NOT_REQUIRED
+@AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'Interfaces - Booking'
 @Metadata.ignorePropagatedAnnotations: true
 @ObjectModel.usageType:{

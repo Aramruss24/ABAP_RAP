@@ -19,7 +19,7 @@ annotate view Z_C_ATRAVEL_5263 with
                 position: 10 },
               { id: 'Booking',
                 purpose: #STANDARD,
-                type: #IDENTIFICATION_REFERENCE,
+                type: #LINEITEM_REFERENCE,
                 label: 'Booking',
                 position: 20,
                 targetElement: '_Booking' }]

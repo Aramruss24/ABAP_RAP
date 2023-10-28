@@ -1,5 +1,5 @@
 @EndUserText.label: 'Consumption - Bookin Supplement'
-@AccessControl.authorizationCheck: #NOT_REQUIRED
+@AccessControl.authorizationCheck: #CHECK
 @Metadata.allowExtensions: true
 define view entity Z_C_BOOKSUPPL_5263
   as projection on Z_I_BOOKSUPPL_5263
@@ -7,8 +7,9 @@ define view entity Z_C_BOOKSUPPL_5263
   key TravelId,
   key BookingId,
   key BookingSupplementId,
+      @ObjectModel.text.element: [ 'SupplementDescription' ]
       SupplementId,
-      _SupplementText.Description : localized,
+      _SupplementText.Description as SupplementDescription : localized,
       @Semantics.amount.currencyCode: 'CurrencyCode'
       Price,
       CurrencyCode,
