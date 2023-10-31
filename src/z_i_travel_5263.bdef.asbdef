@@ -91,6 +91,9 @@ etag master LastChangedAt
 {
   // static fileds control
   field ( readonly ) TravelId, BookingId;
+
+  //Determinations
+  determination calculateTotalSupplPrice on modify { field Price, CurrencyCode; }
   // mandatory fields
   field ( mandatory ) SupplementId, Price;
   update;
