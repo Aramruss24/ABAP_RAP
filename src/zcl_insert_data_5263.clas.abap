@@ -9,7 +9,10 @@ CLASS zcl_insert_data_5263 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_insert_data_5263 IMPLEMENTATION.
+
+
+CLASS ZCL_INSERT_DATA_5263 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -49,5 +52,4 @@ CLASS zcl_insert_data_5263 IMPLEMENTATION.
     out->write( |DONE!| ).
 
   ENDMETHOD.
-
 ENDCLASS.

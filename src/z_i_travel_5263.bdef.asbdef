@@ -65,6 +65,7 @@ etag master LastChangedAt
 
   // Deteminations
   determination calculateTotalFlightPrice on modify { field FlightPrice, CurrencyCode; }
+  determination calculateTotalSupplPrice on modify { field CurrencyCode; }
 
   mapping for ztb_booking_5263 {
              TravelId = travel_id;
